@@ -32,7 +32,7 @@ build:
 
 integrations:
   hub:
-    - integrationName: docker
+    - integrationName: docker-pranay
       type: docker
     - integrationName: docker-siddarthan
       type: docker
