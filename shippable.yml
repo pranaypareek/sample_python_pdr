@@ -22,16 +22,20 @@ build:
     - sudo apt-get update
 
   post_ci:
-    - docker build -t=quay.io/shippablequay/hitchcock2_sample_python .
-    - docker push quay.io/shippablequay/hitchcock2_sample_python
-    - docker build --rm -t=quay.io/shippablequay/sample_python_pdr:test .
-    - docker build --rm -t=quay.io/shippablequay/sample_python_pdr:qa .
-    - docker push quay.io/shippablequay/sample_python_pdr:test
-    - docker push quay.io/shippablequay/sample_python_pdr:qa
+    - docker build -t=pranay/hitchcock2_sample_python .
+    - docker push pranay/hitchcock2_sample_python
+    - docker build --rm -t=siddarthan/sample_python_pdr:test .
+    - docker build --rm -t=amalfra/sample_python_pdr:qa .
+    - docker push siddarthan/sample_python_pdr:test
+    - docker push amalfra/sample_python_pdr:qa
 
 
 integrations:
   hub:
-    - integrationName: ship-pdr
-      type: private docker registry
+    - integrationName: docker
+      type: docker
+    - integrationName: docker-siddarthan
+      type: docker
+    - integrationName: docker-amal
+      type: docker
       
