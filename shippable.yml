@@ -24,8 +24,8 @@ build:
   post_ci:
     - docker build -t=pranay/hitchcock2_sample_python .
     - docker push pranay/hitchcock2_sample_python
-    - docker build --rm -t=vidya-project/sample_python_pdr:test .
-    - docker push gcr.io/vidya-project/sample_python_pdr:test
+    - docker build --rm -t=vidya-project/pyt-img:test .
+    - docker push gcr.io/vidya-project/pyt-img:test
 
 
 integrations:
