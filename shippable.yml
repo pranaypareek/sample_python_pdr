@@ -24,13 +24,13 @@ build:
   post_ci:
     - docker build -t=pranay/hitchcock2_sample_python .
     - docker push pranay/hitchcock2_sample_python
-    - docker build --rm -t=gcr.io/vidya-project/pyt-img:test .
-    - docker push gcr.io/vidya-project/pyt-img:test
+    #- docker build --rm -t=gcr.io/vidya-project/pyt-img:test .
+    #- docker push gcr.io/vidya-project/pyt-img:test
 
 
 integrations:
   hub:
     - integrationName: docker-pranay
       type: docker
-    - integrationName: gcr-pranay
-      type: gcr
+    #- integrationName: gcr-pranay
+      #type: gcr
