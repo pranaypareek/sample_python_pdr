@@ -32,9 +32,9 @@ build:
 
 integrations:
   hub:
-    - integrationName: docker-pranay
-      type: docker
     - integrationName: docker-siddarthan
+      type: docker
+    - integrationName: docker-pranay
       type: docker
     - integrationName: gcr-pranay
       type: gcr
