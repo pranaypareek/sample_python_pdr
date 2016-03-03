@@ -32,5 +32,7 @@ integrations:
   hub:
     - integrationName: docker-pranay
       type: docker
+    - integrationName: docker-pranay-2
+      type: docker
     #- integrationName: gcr-pranay
       #type: gcr
