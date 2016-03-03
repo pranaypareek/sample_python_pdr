@@ -34,7 +34,7 @@ integrations:
   hub:
     - integrationName: docker-pranay
       type: docker
-    - integrationName: docker-siddarthan
+    - integrationName: docker-siddharthan
       type: docker
     - integrationName: gcr-pranay
       type: gcr
